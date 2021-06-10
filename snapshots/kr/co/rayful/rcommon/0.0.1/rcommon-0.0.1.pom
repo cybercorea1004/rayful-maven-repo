@@ -40,7 +40,7 @@
 		</dependency>
 		<dependency>
 			<groupId>kr.co.rayful</groupId>
-			<artifactId>fdb</artifactId>
+			<artifactId>rdb</artifactId>
 			<version>0.0.1</version>
 		</dependency>
 
