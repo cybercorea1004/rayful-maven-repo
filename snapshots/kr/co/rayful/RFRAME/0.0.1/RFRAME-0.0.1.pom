@@ -48,6 +48,7 @@
   <description>Rayful common framework</description>
   <modules>
   	<module>rcommon</module>
+  	<module>rdb</module>
   </modules>
   <dependencies>  
 		<dependency> 
