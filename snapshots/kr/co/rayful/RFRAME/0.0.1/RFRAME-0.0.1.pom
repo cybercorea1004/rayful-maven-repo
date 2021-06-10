@@ -56,6 +56,7 @@
   	<module>rredis</module>
   	<module>rrabbitmq</module>
   	<module>remail</module>
+  	<module>rfcm</module>
   </modules>
   <dependencies>  
 		<dependency> 
