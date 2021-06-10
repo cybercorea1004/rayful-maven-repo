@@ -53,6 +53,7 @@
   	<module>rscheduler</module>
   	<module>rsocket</module>
   	<module>rwebsocket</module>
+  	<module>rredis</module>
   </modules>
   <dependencies>  
 		<dependency> 
