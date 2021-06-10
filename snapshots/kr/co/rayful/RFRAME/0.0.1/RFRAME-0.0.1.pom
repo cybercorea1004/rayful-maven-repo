@@ -67,5 +67,10 @@
 			<artifactId>json-simple</artifactId> 
 			<version>1.1.1</version>
 		</dependency>
+		<dependency>
+			<groupId>kr.co.rayful</groupId>
+			<artifactId>fcommon</artifactId>
+			<version>0.0.1</version> 
+		</dependency>
 	</dependencies>
 </project>

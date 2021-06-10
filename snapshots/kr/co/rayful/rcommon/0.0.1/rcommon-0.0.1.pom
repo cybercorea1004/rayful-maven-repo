@@ -9,7 +9,7 @@
 	</parent>
 	<artifactId>rcommon</artifactId>
 	<name>common</name>
-	<description>시스템 공통</description> 
+	<description>시스템 공통</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -122,15 +122,4 @@
 			<version>2.0.1</version>
 		</dependency>
 	</dependencies>
-	<distributionManagement> 
-		<repository>
-			<id>release</id>
-			<url>https://github.com/cybercorea1004/rayful-maven-repo/raw/master/releases</url>
-		</repository>
-
-		<snapshotRepository>
-			<id>snapshot</id>
-			<url>https://github.com/cybercorea1004/rayful-maven-repo/raw/master/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
 </project>
