@@ -54,6 +54,7 @@
   	<module>rsocket</module>
   	<module>rwebsocket</module>
   	<module>rredis</module>
+  	<module>rrabbitmq</module>
   </modules>
   <dependencies>  
 		<dependency> 
