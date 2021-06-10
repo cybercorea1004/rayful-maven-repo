@@ -49,7 +49,8 @@
   <modules>
   	<module>rcommon</module>
   	<module>rdb</module>
-  	<module>rsftp</module>
+  	<module>rsftp</module> 
+  	<module>rscheduler</module>
   </modules>
   <dependencies>  
 		<dependency> 
