@@ -51,6 +51,7 @@
   	<module>rdb</module>
   	<module>rsftp</module> 
   	<module>rscheduler</module>
+  	<module>rsocket</module>
   </modules>
   <dependencies>  
 		<dependency> 
