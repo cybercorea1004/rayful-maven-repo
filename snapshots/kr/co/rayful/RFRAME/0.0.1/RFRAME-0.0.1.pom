@@ -52,6 +52,7 @@
   	<module>rsftp</module> 
   	<module>rscheduler</module>
   	<module>rsocket</module>
+  	<module>rwebsocket</module>
   </modules>
   <dependencies>  
 		<dependency> 
