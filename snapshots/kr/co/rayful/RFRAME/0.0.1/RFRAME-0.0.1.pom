@@ -55,6 +55,7 @@
   	<module>rwebsocket</module>
   	<module>rredis</module>
   	<module>rrabbitmq</module>
+  	<module>remail</module>
   </modules>
   <dependencies>  
 		<dependency> 
