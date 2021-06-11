@@ -21,7 +21,7 @@ Rayful project repository
      - rscheduler(Sche module 탑재 스케쥴러 관리)
      - rsftp(sftp 사용)
      - rfcm(모바일 Push 모듈)
-     - frabbitmq(rabbitMQ)
+     - rrabbitmq(rabbitMQ)
      - rsocket(소켓 서버)
      - rdb(DB 설정)
      - remail(EMAIL 설정)
