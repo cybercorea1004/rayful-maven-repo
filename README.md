@@ -9,14 +9,7 @@ Rayful project repository
    - spring cloud(2020.0.2)
    - spring admin(2.3.1)
    
-   ex) parent module 설정
-   
-   ---------------------------------------------------
-   
-  
-  ---------------------------------------------------
-
-  2. 제공 component module
+2. 제공 component module
      - rcommon(공통모듈)
      - rscheduler(Sche module 탑재 스케쥴러 관리)
      - rsftp(sftp 사용)
@@ -28,5 +21,6 @@ Rayful project repository
      - rredis(redis 설정 및 Pub/Sub)
      - rwebsocket(WebSocket 설정 Pub/Sub)
      
-  3. 사용 방법
+3. 사용 방법
+ 
    
