@@ -12,48 +12,7 @@ Rayful project repository
    ex) parent module 설정
    
    ---------------------------------------------------
-   <parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.4.5</version>
-		<relativePath /> <!-- lookup parent from repository -->
-	</parent>
-	<repositories>
-		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
-		</repository>
-		<repository>
-			<id>rayful-snapshot</id> <!-- 아무거나 적당히 -->
-			<url>https://github.com/cybercorea1004/rayful-maven-repo/tree/master/snapshots</url> <!-- groupId/artifactId 위치 전 까지의 경로 -->
-		</repository>
-	</repositories>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>${spring-cloud.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>de.codecentric</groupId>
-				<artifactId>spring-boot-admin-dependencies</artifactId>
-				<version>${spring-boot-admin.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-	<!--Spring Cloud Finchley 사용함 -->
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-		<spring-cloud.version>2020.0.2</spring-cloud.version>
-		<spring-boot-admin.version>2.3.1</spring-boot-admin.version>
-	</properties>
+   
   
   ---------------------------------------------------
 
