@@ -102,6 +102,20 @@ Rayful project repository
 		<version>0.0.1</version>
 	</dependency>
      ```
+     - yml 설정
+     ```
+	spring:
+	  datasource:
+	    hikari:
+	      idle-timeout: 55000
+	      max-lifetime: 55000
+	    mariadb: 
+	      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+	      jdbc-url: jdbc:log4jdbc:mysql://*.*.*.*:13306/DB_BRS?useUnicode=true&characterEncoding=utf-8&interactiveClient=true&autoReconnect=true&autoReconnectForPools=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+	      username: {username}
+	      password: {password}
+	      maximumPoolSize: 61     
+     ```
    다. rscheduler(Sche module 탑재 스케쥴러 관리)
      - dependency
      ```xml
@@ -111,6 +125,8 @@ Rayful project repository
 		<version>0.0.1</version>
 	</dependency>
      ```
+     - web 실행시 자동 실행됨
+       : 스케쥴러 only 실행을 위한 DB Table을 자동으로 생성한다.(있을경우 패스)
    라. rsftp(sftp 사용)
      - dependency
      ```xml
@@ -119,6 +135,14 @@ Rayful project repository
 		<artifactId>rsftp</artifactId>
 		<version>0.0.1</version>
 	</dependency>
+     ```
+     - yml 설정
+     ```
+	sftp:
+	  host: *.*.*.*
+	  user_name: {username}
+	  user_pass: {password}
+	  port: {port}     
      ```
    마. rfcm(모바일 Push 모듈)
      - dependency
@@ -129,6 +153,16 @@ Rayful project repository
 		<version>0.0.1</version>
 	</dependency>
      ```
+     - yml 설정
+     ``` 
+     fcm:
+	fcm:
+	  target:
+	    prop:
+	      path: templates/fcm/kospo-adfdkfjdkjflsdd-dfkdfjdk.json
+	    database:
+	      url: https://kospo-aadfdfs-sample.firebaseio.com/
+     ```
    바. rrabbitmq(rabbitMQ)
      - dependency
      ```xml
@@ -137,6 +171,16 @@ Rayful project repository
 		<artifactId>rrabbitmq</artifactId>
 		<version>0.0.1</version>
 	</dependency>
+     ```
+     - yml 설정
+     ```
+	spring:
+	  rabbitmq:
+	    port: 5672
+	    host: 192.168.11.101
+	    username: admin
+	    password: 12345
+	    virtual-host: rayful
      ```
    사. rsocket(소켓 서버)   
      - dependency
