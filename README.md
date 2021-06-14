@@ -64,4 +64,11 @@ Rayful project repository
      
 3. 사용 방법
  
-   
+   가. rcommon(공통모듈)
+     - repository
+     ```xml
+<repository>
+			<id>rayful-snapshot</id> <!-- 아무거나 적당히 -->
+			<url>https://github.com/cybercorea1004/rayful-maven-repo/tree/master/snapshots</url> <!-- groupId/artifactId 위치 전 까지의 경로 -->
+		</repository>
+     ```
