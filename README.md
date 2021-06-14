@@ -165,6 +165,18 @@ Rayful project repository
 		<version>0.0.1</version>
 	</dependency>
      ```
+     - yml 설정
+     ```
+	  redis:
+	    cluster:
+	      nodes: 
+		- 192.168.11.*:6701
+		- 192.168.11.*:6702
+		- 192.168.11.*:6703
+		- 192.168.11.*:6704
+		- 192.168.11.*:6705
+		- 192.168.11.*:6706
+     ```
    차. rwebsocket(WebSocket 설정 Pub/Sub)
      - dependency
      ```xml
