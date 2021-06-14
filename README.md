@@ -191,6 +191,8 @@ Rayful project repository
 		<version>0.0.1</version>
 	</dependency>
      ```
+     - Application 시작시 서버 자동실행(Socket Server 자동 기동)
+     
    아. remail(EMAIL 설정)
      - dependency
      ```xml
@@ -199,6 +201,15 @@ Rayful project repository
 		<artifactId>remail</artifactId>
 		<version>0.0.1</version>
 	</dependency>
+     ```
+     - yml 설정
+     ```
+	mail: 
+	  auth: 
+	    userName: address@rayfulsystem.com
+	    userPass: ******
+	    userFullName: {username}
+	    message: 이 메일주소는 발신전용 주소입니다. 회신이 불가능합니다.
      ```
    자. rredis(redis 설정 및 Pub/Sub)
      - dependency
