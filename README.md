@@ -72,6 +72,19 @@ Rayful project repository
 	<url>https://github.com/cybercorea1004/rayful-maven-repo/tree/master/snapshots</url>
 	</repository>
      ```
+     - yml 설정
+     ```
+	pdf: 
+	  target: 
+	    server: 
+	      path: 파일 디렉토리 패스
+	logging:
+	  file: 
+	    path: ./
+	    name: ./applicationRun.log
+	  pattern:
+	    file: -%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID}){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx
+     ```
      - dependency
      ```xml
 	<dependency>
