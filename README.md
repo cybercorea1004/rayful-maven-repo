@@ -63,7 +63,10 @@ Rayful project repository
      - rwebsocket(WebSocket 설정 Pub/Sub)
      
 3. 사용 방법
- 
+   - component scan
+     ```
+     @ComponentScan(basePackages = {"kr.co.rayful"})
+     ```
    가. rcommon(공통모듈)
      - repository
      ```xml
@@ -125,8 +128,13 @@ Rayful project repository
 		<version>0.0.1</version>
 	</dependency>
      ```
-     - web 실행시 자동 실행됨
-       : 스케쥴러 only 실행을 위한 DB Table을 자동으로 생성한다.(있을경우 패스)
+     - 시작시 Annotation
+       ```
+       @EnableScheduling
+       ```
+       : web 실행시 자동 실행됨
+         스케쥴러 only 실행을 위한 DB Table을 자동으로 생성한다.(있을경우 패스)
+	 
    라. rsftp(sftp 사용)
      - dependency
      ```xml
@@ -232,6 +240,16 @@ Rayful project repository
 		- 192.168.11.*:6705
 		- 192.168.11.*:6706
      ```
+     - 시작시 Annotation 추가 
+     ```
+     @EnableRedisHttpSession
+     ```
+     - 사용 예제
+       a.Listener 선언
+       
+         ```java
+		private final SimpleMessageListenerContainer simpleMessageListenerContainer;
+	 ```
    차. rwebsocket(WebSocket 설정 Pub/Sub)
      - dependency
      ```xml
