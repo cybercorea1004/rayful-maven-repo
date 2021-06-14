@@ -52,12 +52,12 @@ Rayful project repository
    ```
 2. 제공 component module
      - rcommon(공통모듈)
+     - rdb(DB 설정)
      - rscheduler(Sche module 탑재 스케쥴러 관리)
      - rsftp(sftp 사용)
      - rfcm(모바일 Push 모듈)
      - rrabbitmq(rabbitMQ)
-     - rsocket(소켓 서버)
-     - rdb(DB 설정)
+     - rsocket(소켓 서버)     
      - remail(EMAIL 설정)
      - rredis(redis 설정 및 Pub/Sub)
      - rwebsocket(WebSocket 설정 Pub/Sub)
@@ -67,8 +67,17 @@ Rayful project repository
    가. rcommon(공통모듈)
      - repository
      ```xml
-<repository>
-			<id>rayful-snapshot</id> <!-- 아무거나 적당히 -->
-			<url>https://github.com/cybercorea1004/rayful-maven-repo/tree/master/snapshots</url> <!-- groupId/artifactId 위치 전 까지의 경로 -->
-		</repository>
+	<repository>
+	<id>rayful-snapshot</id> <!-- 아무거나 적당히 -->
+	<url>https://github.com/cybercorea1004/rayful-maven-repo/tree/master/snapshots</url>
+	</repository>
      ```
+     - dependency
+     ```xml
+	<dependency>
+		<groupId>kr.co.rayful</groupId>
+		<artifactId>rcommon</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+     ```
+   나. rdb(DB 설정)
