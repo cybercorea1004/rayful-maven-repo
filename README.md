@@ -80,4 +80,84 @@ Rayful project repository
 		<version>0.0.1</version>
 	</dependency>
      ```
-   나. rdb(DB 설정)
+   나. rdb(DB 설정 / common에 포함)
+     - dependency
+     ```xml
+	<dependency>
+		<groupId>kr.co.rayful</groupId>
+		<artifactId>rdb</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+     ```
+   다. rscheduler(Sche module 탑재 스케쥴러 관리)
+     - dependency
+     ```xml
+	<dependency>
+		<groupId>kr.co.rayful</groupId>
+		<artifactId>rscheduler</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+     ```
+   라. rsftp(sftp 사용)
+     - dependency
+     ```xml
+	<dependency>
+		<groupId>kr.co.rayful</groupId>
+		<artifactId>rsftp</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+     ```
+   마. rfcm(모바일 Push 모듈)
+     - dependency
+     ```xml
+	<dependency>
+		<groupId>kr.co.rayful</groupId>
+		<artifactId>rfcm</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+     ```
+   바. rrabbitmq(rabbitMQ)
+     - dependency
+     ```xml
+	<dependency>
+		<groupId>kr.co.rayful</groupId>
+		<artifactId>rrabbitmq</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+     ```
+   사. rsocket(소켓 서버)   
+     - dependency
+     ```xml
+	<dependency>
+		<groupId>kr.co.rayful</groupId>
+		<artifactId>rsocket</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+     ```
+   아. remail(EMAIL 설정)
+     - dependency
+     ```xml
+	<dependency>
+		<groupId>kr.co.rayful</groupId>
+		<artifactId>remail</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+     ```
+   자. rredis(redis 설정 및 Pub/Sub)
+     - dependency
+     ```xml
+	<dependency>
+		<groupId>kr.co.rayful</groupId>
+		<artifactId>rredis</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+     ```
+   차. rwebsocket(WebSocket 설정 Pub/Sub)
+     - dependency
+     ```xml
+	<dependency>
+		<groupId>kr.co.rayful</groupId>
+		<artifactId>rwebsocket</artifactId>
+		<version>0.0.1</version>
+	</dependency>
+     ```
