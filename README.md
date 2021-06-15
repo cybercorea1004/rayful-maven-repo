@@ -256,6 +256,17 @@ Rayful project repository
 		simpleMessageListenerContainer.addQueueNames("topic_rayful_one");
 		simpleMessageListenerContainer.addQueueNames("topic_rayful_two");
 		```
+	  ```java
+		@Service
+		public class RabbitRcvService implements RabbitRcvIF{
+			private Logger logger = LoggerFactory.getLogger(RabbitRcvService.class);
+			@Override
+			public void accept(String queuName, String message) {
+				logger.info(queuName + " :: " + message);
+			}
+
+		}
+	  ```
    차. rwebsocket(WebSocket 설정 Pub/Sub)
      - dependency
      ```xml
