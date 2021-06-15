@@ -190,6 +190,28 @@ Rayful project repository
 	    password: 12345
 	    virtual-host: rayful
      ```
+     - 사용 예제
+      : Listener(subscribe)
+       
+     ```java
+	 	//선언부
+		private final SimpleMessageListenerContainer simpleMessageListenerContainer;
+		
+		// queue subscribe binding
+		simpleMessageListenerContainer.addQueueNames("topic_rayful_one");
+		simpleMessageListenerContainer.addQueueNames("topic_rayful_two");
+	```    
+     ```java
+	@Service
+	public class RabbitRcvService implements RabbitRcvIF{
+		private Logger logger = LoggerFactory.getLogger(RabbitRcvService.class);
+		@Override
+		public void accept(String queuName, String message) {
+			logger.info(queuName + " :: " + message);
+		}
+
+	}
+	```
    사. rsocket(소켓 서버)   
      - dependency
      ```xml
@@ -246,27 +268,25 @@ Rayful project repository
      ```
      - 사용 예제
      
-       : Listener(subscribe)
+         : Listener(subscribe)
        
-         ```java
-	 	//선언부
-		private final SimpleMessageListenerContainer simpleMessageListenerContainer;
+     ```java
+	 	// topic에 메시지 발행을 기다리는 Listner
+   		private final RedisListener redisListener;
 		
 		// queue subscribe binding
-		simpleMessageListenerContainer.addQueueNames("topic_rayful_one");
-		simpleMessageListenerContainer.addQueueNames("topic_rayful_two");
-		```
-	  ```java
-		@Service
-		public class RabbitRcvService implements RabbitRcvIF{
-			private Logger logger = LoggerFactory.getLogger(RabbitRcvService.class);
+		redisListener.registListener({queuename});
+	```    
+     ```java
+	@Service
+		public class RedisSubscribeService implements RedisSubscribeIF{
+			private Logger logger = LoggerFactory.getLogger(this.getClass());
 			@Override
-			public void accept(String queuName, String message) {
-				logger.info(queuName + " :: " + message);
-			}
-
+			public void receiveMessage(String channel, JSONObject object) {
+				logger.info("receive message ====> " + channel + " :: " + object.toJSONString());
 		}
-	  ```
+	```       
+
    차. rwebsocket(WebSocket 설정 Pub/Sub)
      - dependency
      ```xml
