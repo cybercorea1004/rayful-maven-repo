@@ -191,6 +191,17 @@ Rayful project repository
 	    virtual-host: rayful
      ```
      - 사용 예제
+     
+      : push(publish)
+       
+     ```java
+	 	//선언부
+		private final RabbitTemplate rabbitTemplate;
+	```    
+     ```java
+	rabbitTemplate.convertAndSend(topicExchange, routingKey, message);
+	```
+	
       : Listener(subscribe)
        
      ```java
@@ -241,6 +252,28 @@ Rayful project repository
 	    userFullName: {username}
 	    message: 이 메일주소는 발신전용 주소입니다. 회신이 불가능합니다.
      ```
+     - 사용 예제
+      : 이메일 발송
+       
+     ```java
+	 	// Email Service
+    		private final EmailService emailService;
+	```    
+     ```java
+	SendHistoryInfo sendHistoryInfo = new SendHistoryInfo();
+		sendHistoryInfo.setSndng_info(reqMap.get("sndng_info")+"");
+		sendHistoryInfo.setSndng_tit(reqMap.get("sndng_tit")+"");
+		sendHistoryInfo.setAuto_sndng_yn(reqMap.get("auto_sndng_yn")+"");
+		sendHistoryInfo.setMsg(reqMap.get("msg")+"");
+		
+		sendHistoryInfo.setFiles(files);
+		try {
+			HashMap<String, Object> sndResult = emailService.sendEmail( sendHistoryInfo);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	```
    자. rredis(redis 설정 및 Pub/Sub)
      - dependency
      ```xml
@@ -268,7 +301,20 @@ Rayful project repository
      ```
      - 사용 예제
      
-         : Listener(subscribe)
+      : push(publish)
+       
+     ```java
+	 	//선언부
+	private final RedisPubService redisPublisher;
+	```
+	
+     ```java
+	ChannelTopic channel = redisListener.findChannel(key);
+	redisPublisher.publish(channel, message);
+	
+	```
+	
+	: Listener(subscribe)
        
      ```java
 	 	// topic에 메시지 발행을 기다리는 Listner
