@@ -61,7 +61,8 @@ Rayful project repository
      - remail(EMAIL 설정)
      - rredis(redis 설정 및 Pub/Sub)
      - rwebsocket(WebSocket 설정 Pub/Sub)
-     
+   
+    [API_DOC 바로 가기](https://cybercorea1004.github.io/rayfuldoc/)
 3. 사용 방법
    - component scan
      ```
