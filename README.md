@@ -245,11 +245,17 @@ Rayful project repository
      @EnableRedisHttpSession
      ```
      - 사용 예제
-       a.Listener 선언
+     
+       : Listener(subscribe)
        
          ```java
+	 	//선언부
 		private final SimpleMessageListenerContainer simpleMessageListenerContainer;
-	 ```
+		
+		// queue subscribe binding
+		simpleMessageListenerContainer.addQueueNames("topic_rayful_one");
+		simpleMessageListenerContainer.addQueueNames("topic_rayful_two");
+		```
    차. rwebsocket(WebSocket 설정 Pub/Sub)
      - dependency
      ```xml
