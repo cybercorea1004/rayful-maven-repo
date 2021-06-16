@@ -61,6 +61,7 @@ Rayful project repository
      - remail(EMAIL 설정)
      - rredis(redis 설정 및 Pub/Sub)
      - rwebsocket(WebSocket 설정 Pub/Sub)
+     - properties 암호화
    
     [API_DOC 바로 가기](https://cybercorea1004.github.io/rayfuldoc/)
 3. 사용 방법
@@ -343,3 +344,20 @@ Rayful project repository
 		<version>0.0.1</version>
 	</dependency>
      ```
+   타. properties 암호화
+     - yml 설정(실행시)
+	```
+	#암호화 방식 선언
+	jasypt:
+	  encryptor:
+	    bean: jasyptStringEncryptor
+	    algorithm: PBEWithMD5AndDES
+	    poolSize: 1
+	    property:
+	      prefix: ENC(
+	      suffix: )
+	#사용방법
+	rayful:
+	  enc:
+	    test: ENC(V42rExLbMjWc2ADIPoEVx/5kTjn2HWbL)
+	```
