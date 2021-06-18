@@ -2,7 +2,7 @@
 
 FrameWork Archtecture 구성
 
-![RayfulFramework0618](https://user-images.githubusercontent.com/733198/122503381-4ab1ae00-d033-11eb-89e2-c3f5b8098b61.png)
+![그림1](https://user-images.githubusercontent.com/733198/122505093-9dd93000-d036-11eb-84d5-774171140379.png)
 
 Rayful project repository
 
