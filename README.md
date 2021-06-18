@@ -1,4 +1,9 @@
 # rayful-maven-repo
+
+FrameWork Archtecture 구성
+
+![RayfulFramework0618](https://user-images.githubusercontent.com/733198/122502993-a0d22180-d032-11eb-92f2-e617f27f7ff2.png)
+
 Rayful project repository
 
 프로젝트 진행서 반복 또는 필수적인 사항들에 대한 공통 처리를 위한 모듈을 정의하고 사용합니다.
