@@ -2,7 +2,7 @@
 
 FrameWork Archtecture 구성
 
-![그림1](https://user-images.githubusercontent.com/733198/122505093-9dd93000-d036-11eb-84d5-774171140379.png)
+<img width="772" alt="Framework archtecture" src="https://user-images.githubusercontent.com/733198/122505187-cd883800-d036-11eb-89ae-c910b7ca5f13.png">
 
 Rayful project repository
 
