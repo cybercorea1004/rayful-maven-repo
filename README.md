@@ -2,8 +2,7 @@
 
 FrameWork Archtecture 구성
 
-<img width="772" alt="Framework archtecture" src="https://user-images.githubusercontent.com/733198/122505187-cd883800-d036-11eb-89ae-c910b7ca5f13.png">
-
+![스크린샷 2021-06-21 오후 4 38 43](https://user-images.githubusercontent.com/733198/122724801-41347a00-d2af-11eb-80ea-fbc90a51963f.png)
 Rayful project repository
 
 프로젝트 진행서 반복 또는 필수적인 사항들에 대한 공통 처리를 위한 모듈을 정의하고 사용합니다.
