@@ -67,6 +67,7 @@ Rayful project repository
      - rredis(redis 설정 및 Pub/Sub)
      - rwebsocket(WebSocket 설정 Pub/Sub)
      - properties 암호화
+     - 내부 연계 지원
    
     [API_DOC 바로 가기](https://cybercorea1004.github.io/rayfuldoc/)
 3. 사용 방법
@@ -366,3 +367,4 @@ Rayful project repository
 	  enc:
 	    test: ENC(V42rExLbMjWc2ADIPoEVx/5kTjn2HWbL)
 	```
+   파. 내부 연계 지원(AIP DOC 
