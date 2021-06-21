@@ -367,4 +367,11 @@ Rayful project repository
 	  enc:
 	    test: ENC(V42rExLbMjWc2ADIPoEVx/5kTjn2HWbL)
 	```
-   파. 내부 연계 지원(AIP DOC 
+   파. 내부 연계 지원([내부 API 바로 가기](https://cybercorea1004.github.io/rayfuldoc/kr/co/rayful/common/inf/ingw/InterfaceServiceIF.html))
+     - yml 설정(실행시)
+	```
+	#내부 연계 방식 선언(예제)
+	internal:
+	  interface:
+	    target: EAI
+	```
