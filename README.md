@@ -159,6 +159,8 @@ Rayful project repository
 	  user_pass: {password}
 	  port: {port}     
      ```
+     [SFTP AIP DOC 바로가기](https://cybercorea1004.github.io/rayfuldoc/kr/co/rayful/sftp/service/SftpService.html)
+     
    마. rfcm(모바일 Push 모듈)
      - dependency
      ```xml
