@@ -376,3 +376,9 @@ Rayful project repository
 	  interface:
 	    target: EAI
 	```
+
+     - 발송(KOSPO 사용 예제)
+     
+      ```java
+	returnData = (NRS_INNF_001_RES)kospoEAIAdapter.sendData("NRS_INNF_001", interfaceID, nRS_INNF_001, NRS_INNF_001_RES.class);
+	```
