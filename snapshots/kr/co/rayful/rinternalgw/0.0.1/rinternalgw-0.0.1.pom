@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>kr.co.rayful</groupId>
+		<artifactId>RFRAME</artifactId>
+		<version>0.0.1</version>
+	</parent>
+	<artifactId>rinternalgw</artifactId>
+	<name>Internal Gateway</name>
+	<description>Internal interface gateway module</description>
+	<dependencies>
+		<dependency>
+			<groupId>kr.co.rayful</groupId>
+			<artifactId>rcommon</artifactId>
+			<version>0.0.1</version>
+		</dependency> 
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>
+		<dependency> 
+		 <groupId>transceiverx</groupId>
+		 <artifactId>transceiverx</artifactId> 
+		 <version>0.1.0</version> 
+		</dependency>
+	</dependencies>
+</project>

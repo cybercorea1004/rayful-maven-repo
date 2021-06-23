@@ -8,6 +8,7 @@
 		<version>0.0.1</version>
 	</parent>
 	<artifactId>rcommon</artifactId>
+	<version>0.0.1</version>
 	<name>common</name>
 	<description>시스템 공통</description>
 	<dependencies>

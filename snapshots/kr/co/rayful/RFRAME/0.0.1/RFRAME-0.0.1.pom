@@ -57,10 +57,11 @@
   	<module>rrabbitmq</module>
   	<module>remail</module>
   	<module>rfcm</module>
+  	<module>rinternalgw</module>
   </modules>
   <dependencies>  
 		<dependency> 
-			<groupId>org.projectlombok</groupId>
+			<groupId>org.projectlombok</groupId> 
 			<artifactId>lombok</artifactId>
 		</dependency>
 		<dependency>
