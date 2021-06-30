@@ -15,7 +15,7 @@
 			<groupId>kr.co.rayful</groupId>
 			<artifactId>rcommon</artifactId>
 			<version>0.0.1</version>
-		</dependency> 
+		</dependency>  
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-xml</artifactId>
